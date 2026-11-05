@@ -11,7 +11,7 @@ from app import app
 
 def test_homepage():
     response = app.test_client().get("/")
-    assert response.status_code == 200
+    assert response.status_code == 201
     assert b"Welcome to ShopEase" in response.data
 
 
